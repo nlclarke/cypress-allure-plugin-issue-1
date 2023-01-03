@@ -1,0 +1,20 @@
+{
+  "name": "cypress-allure-plugin-issue-1",
+  "version": "1.0.0",
+  "description": "Skipped tests after domain change",
+  "main": "index.js",
+  "scripts": {
+    "allure:clean": "if exist allure-results rmdir /q /s allure-results && if exist allure-report rmdir /q /s allure-report",
+    "allure:generate": "allure generate allure-results --clean",
+    "allure:open": "allure open"
+  },
+  "author": "Nathan Clarke",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.2.0"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.34.0",
+    "allure-commandline": "^2.20.1"
+  }
+}
